@@ -1,13 +1,8 @@
 package ui;
-import models.*;
-import utils.*;
-
 import java.awt.*;
 import java.awt.event.*;
+import java.util.Objects;
 import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
-import java.util.HashMap;
-import java.util.Map;
 
 // Driver selection UI class
 class F1DriverSelection extends JFrame implements ActionListener 
@@ -27,15 +22,14 @@ class F1DriverSelection extends JFrame implements ActionListener
         gbc.fill = GridBagConstraints.BOTH;
         
         // Define checkboxes with driver names and images
-        checkbox1 = createCheckBox("Lewis Hamilton", "E:/yashvi/Coding/Javaproj/lewishamilton.jpeg");
-        checkbox2 = createCheckBox("Valtteri Bottas", "E:/yashvi/Coding/Javaproj/valteribottas.jpeg");
-        checkbox3 = createCheckBox("Charles Leclerc", "E:/yashvi/Coding/Javaproj/charlesleclerc.jpeg");
-        checkbox4 = createCheckBox("Carlos Sainz Jr.", "E:/yashvi/Coding/Javaproj/carlossainz.jpeg");
-        checkbox5 = createCheckBox("Lando Norris", "E:/yashvi/Coding/Javaproj/landonorris.jpg");
-        checkbox6 = createCheckBox("Daniel Ricciardo", "E:/yashvi/Coding/Javaproj/danielricciardo.jpeg");
-        checkbox7 = createCheckBox("Max Verstappen", "E:/yashvi/Coding/Javaproj/maxverstappen.jpeg");
-        checkbox8 = createCheckBox("Sergio Perez", "E:/yashvi/Coding/Javaproj/checoperez.jpeg");
-        
+        checkbox1 = createCheckBox("Lewis Hamilton", Objects.requireNonNull(F1DriverSelection.class.getResource("/resources/lewishamilton.jpeg")).toString());
+        checkbox2 = createCheckBox("Valtteri Bottas", Objects.requireNonNull(F1DriverSelection.class.getResource("/resources/valteribottas.jpeg")).toString());
+        checkbox3 = createCheckBox("Charles Leclerc", Objects.requireNonNull(F1DriverSelection.class.getResource("/resources/charlesleclerc.jpeg")).toString());
+        checkbox4 = createCheckBox("Carlos Sainz Jr.", Objects.requireNonNull(F1DriverSelection.class.getResource("/resources/carlossainz.jpeg")).toString());
+        checkbox5 = createCheckBox("Lando Norris", Objects.requireNonNull(F1DriverSelection.class.getResource("/resources/landnorris.jpeg")).toString());
+        checkbox6 = createCheckBox("Daniel Ricciardo", Objects.requireNonNull(F1DriverSelection.class.getResource("/resources/danielricciardo.jpeg")).toString());
+        checkbox7 = createCheckBox("Max Verstappen", Objects.requireNonNull(F1DriverSelection.class.getResource("/resources/maxverstappen.jpeg")).toString());
+        checkbox8 = createCheckBox("Sergio Perez", Objects.requireNonNull(F1DriverSelection.class.getResource("/resources/checoperez.jpeg")).toString());
         // Adding checkboxes to layout with positioning
         gbc.gridx = 0;
         gbc.gridy = 0;
