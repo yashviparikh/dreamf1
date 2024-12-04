@@ -14,3 +14,6 @@ Thumbs.db
 #ignore log and temporary files
 *.log
 *.tmp
+
+lib/
+trials/
