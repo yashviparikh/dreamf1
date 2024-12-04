@@ -16,6 +16,7 @@ class F1DriverSelection extends JFrame implements ActionListener
         setSize(800, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new GridBagLayout());  // Using GridBagLayout for flexible layout
+        setLocationRelativeTo(null);
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.insets = new Insets(10, 10, 10, 10);  // Padding between components
         gbc.anchor = GridBagConstraints.CENTER;  // Center components
@@ -26,7 +27,7 @@ class F1DriverSelection extends JFrame implements ActionListener
         checkbox2 = createCheckBox("Valtteri Bottas", Objects.requireNonNull(F1DriverSelection.class.getResource("/resources/valteribottas.jpeg")).toString());
         checkbox3 = createCheckBox("Charles Leclerc", Objects.requireNonNull(F1DriverSelection.class.getResource("/resources/charlesleclerc.jpeg")).toString());
         checkbox4 = createCheckBox("Carlos Sainz Jr.", Objects.requireNonNull(F1DriverSelection.class.getResource("/resources/carlossainz.jpeg")).toString());
-        checkbox5 = createCheckBox("Lando Norris", Objects.requireNonNull(F1DriverSelection.class.getResource("/resources/landnorris.jpeg")).toString());
+        checkbox5 = createCheckBox("Lando Norris", Objects.requireNonNull(F1DriverSelection.class.getResource("/resources/land0norris.jpg")).toString());
         checkbox6 = createCheckBox("Daniel Ricciardo", Objects.requireNonNull(F1DriverSelection.class.getResource("/resources/danielricciardo.jpeg")).toString());
         checkbox7 = createCheckBox("Max Verstappen", Objects.requireNonNull(F1DriverSelection.class.getResource("/resources/maxverstappen.jpeg")).toString());
         checkbox8 = createCheckBox("Sergio Perez", Objects.requireNonNull(F1DriverSelection.class.getResource("/resources/checoperez.jpeg")).toString());

@@ -1,13 +1,8 @@
 package ui;
-import models.*;
-import utils.*;
-
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
-import java.util.HashMap;
-import java.util.Map;
+import models.*;
 
 // User details UI class
 public class UserDetailsUI extends JFrame implements ActionListener 
@@ -20,6 +15,7 @@ public UserDetailsUI()
     setTitle("Login!");
     setSize(500, 500);
     setLayout(new GridBagLayout());
+    setLocationRelativeTo(null); 
     GridBagConstraints gbc = new GridBagConstraints();
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     getContentPane().setBackground(new Color(240, 240, 240));

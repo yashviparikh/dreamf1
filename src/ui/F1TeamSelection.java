@@ -16,6 +16,7 @@ class F1TeamSelection extends JFrame implements ActionListener
         setSize(600, 500);  // Adjusted size for better fit
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new GridBagLayout());
+        setLocationRelativeTo(null);
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.insets = new Insets(20, 20, 20, 20);  // Padding around components
         gbc.anchor = GridBagConstraints.CENTER;
