@@ -13,7 +13,7 @@ class F1TeamSelection extends JFrame implements ActionListener
     public F1TeamSelection() {
         // Frame settings
         setTitle("Select your team!");
-        setSize(600, 500);  // Adjusted size for better fit
+        setSize(500, 500);  // Adjusted size for better fit
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new GridBagLayout());
         setLocationRelativeTo(null);
@@ -31,8 +31,8 @@ class F1TeamSelection extends JFrame implements ActionListener
 
         // ComboBox setup
         combobox = new JComboBox<>(items);
-        combobox.setFont(new Font("Arial", Font.PLAIN, 14));  // Adjusted font
-        combobox.setPreferredSize(new Dimension(250, 50));    // Adjusted size
+        combobox.setFont(new Font("Calibri", Font.PLAIN, 14));  // Adjusted font
+        combobox.setPreferredSize(new Dimension(350, 150));    // Adjusted size
         combobox.setRenderer(new ComboBoxRenderer());
 
         // Adding ComboBox to the layout
@@ -42,7 +42,7 @@ class F1TeamSelection extends JFrame implements ActionListener
 
         // Button setup
         JButton getTeamButton = new JButton("Get Team!");
-        getTeamButton.setFont(new Font("Sans-Serif", Font.BOLD, 14));  // Bold button text
+        getTeamButton.setFont(new Font("Calibri", Font.BOLD, 24));  // Bold button text
         gbc.gridy = 1;  // Position below the ComboBox
         add(getTeamButton, gbc);
 
