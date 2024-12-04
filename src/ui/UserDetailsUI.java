@@ -20,22 +20,22 @@ public UserDetailsUI()
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     getContentPane().setBackground(new Color(240, 240, 240));
 
-    lname = new JLabel("UserName: ");
-    lname.setFont(new Font("Arial", Font.BOLD, 14));
+    lname = new JLabel("Username: ");
+    lname.setFont(new Font("Calibri", Font.BOLD, 18));
     lage = new JLabel("Age: ");
-    lage.setFont(new Font("Arial", Font.BOLD, 14));
+    lage.setFont(new Font("Calibri", Font.BOLD, 18));
     lemail = new JLabel("Email: ");
-    lemail.setFont(new Font("Arial", Font.BOLD, 14));
+    lemail.setFont(new Font("Calibri", Font.BOLD, 18));
 
     name = new JTextField(20);
-    name.setFont(new Font("Arial", Font.PLAIN, 14));
+    name.setFont(new Font("Calibri", Font.PLAIN, 14));
     age = new JTextField(2);
-    age.setFont(new Font("Arial", Font.PLAIN, 14));
+    age.setFont(new Font("Calibri", Font.PLAIN, 14));
     email = new JTextField(25);
-    email.setFont(new Font("Arial", Font.PLAIN, 14));
+    email.setFont(new Font("Calibri", Font.PLAIN, 14));
 
     submit = new JButton("Submit");
-    submit.setFont(new Font("Arial", Font.BOLD, 14));
+    submit.setFont(new Font("Arial", Font.BOLD, 24));
         submit.setBackground(new Color(0, 153, 0));  // Green button
         submit.setForeground(Color.WHITE);
     submit.addActionListener(this);

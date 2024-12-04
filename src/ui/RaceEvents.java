@@ -1,7 +1,4 @@
 package ui;
-import utils.*;
-import models.*;
-
 import java.awt.*;
 import java.awt.event.*;
 import java.util.HashMap;
@@ -168,6 +165,7 @@ class Points extends JFrame implements ActionListener {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(600, 500);  // Increased size for better spacing
         setLayout(new BorderLayout(10, 10));  // Add padding between components
+        setLocationRelativeTo(null);
 
         // Table Setup
         String[] columnNames = {"Driver", "Points"};
